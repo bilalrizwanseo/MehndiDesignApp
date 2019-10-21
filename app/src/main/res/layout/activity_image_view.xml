@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/imageBg"
+    android:padding="2dp"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context=".ImageViewActivity">
+
+    <Button
+        android:id="@+id/share_Btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/share_btn"
+        android:paddingTop="10dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/relative_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        >
+
+        <com.github.chrisbanes.photoview.PhotoView
+
+            android:id="@+id/imageMehndi"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_centerInParent="true"
+            android:padding="2dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/a_2" />
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
